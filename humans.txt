@@ -1,0 +1,36 @@
+
+         **      ** **                                                     
+        /**     /**//                                                      
+        /**     /** ** *******   ****** **********   ******  ******  ***** 
+     ******  ******/**//**///** **//// //**//**//** **////**//**//* **///**
+    **///** **///**/** /**  /**//*****  /** /** /**/**   /** /** / /*******
+   /**  /**/**  /**/** /**  /** /////** /** /** /**/**   /** /**   /**//// 
+   //******//******/** ***  /** ******  *** /** /**//****** /***   //******
+    //////  ////// // ///   // //////  ///  //  //  //////  ///     ////// 
+
+
+
+        /* Designed And Built By David Dinsmore */
+
+
+
+        /* Huge Thanks */
+
+         - The personal page by Weightshift (Naz Hamid & Scott Robbin) for the initial inspiration for this site.
+           [https://github.com/weightshift/The-Personal-Page]
+
+
+        - Supersized! plugin by Sam Dunn of One Mighty Roar.
+          [http://buildinternet.com/project/supersized/]
+
+
+        - TwentyTwenty plugin by Zurb.
+          [http://zurb.com/playground/twentytwenty]
+
+
+
+
+        /* Site */
+
+           Custom Jekyll site hosted on GitHub Pages
+           Software: Mac OS X, Sublime Text 3, Photoshop CC, Google Chrome, and Google Fonts.

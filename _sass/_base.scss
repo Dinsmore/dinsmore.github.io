@@ -1,206 +1,160 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
     margin: 0;
     padding: 0;
-}
-
-
-
-/**
- * Basic styling
- */
-body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
     background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
+    border-top: 4px solid #3E4149;
+    color: $text-color;
     font-weight: $base-font-weight;
+    font-style: normal;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    cursor: default;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body.home {
+    background-color: #3E4149;
+    border: none;
 }
 
 
 
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
+/* Misc */
+/* Clearfix */
+.cf:before,
+.cf:after {
+    display: table;
+    content: " ";
+}
+.cf:after { clear: both; }
+img, object { max-width: 100%; }
+.hidden { display: none; }
+/*.desktop { display: inline-block; }*/
+.mobile { display: none !important; }
+.print-only { display: none !important; }
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+/* Links */
+a { color: #5eb087; text-decoration: none; }
+a:hover { cursor: pointer; text-decoration: underline; }
+header a:hover, .pager a:hover { text-decoration: none; }
 
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+/* Typography */
+h1, h1 span, h2, h3, h4, h5, h6 {
+    font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";
+    font-weight: normal;
 }
 
+h3 {
+    font-size: 28px;
+    font-family: 'Sanchez', serif;
+    margin: 0 0 24px 0;
+    line-height: 1;
+}
+.resume h3 { color: #888; }
+h4 {
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    font-size: 17px;
+    line-height: 1;
+}
 
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+/* Work Titles */
+h5 {
+    color: #FFF;
+    font-family: 'Sanchez', serif;
+    font-size: 20px;
+    margin: 30px 0 2px;
+    line-height: 1;
+}
+h6 {
+    color: #5eb087;
+    font-size: 12px;
     font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
+    line-height: 1.3em;
+    margin: 0 0 12px 0;
+}
+h6 span {
+    display: block;
+    color: #888;
+}
+p { margin: 0 0 24px 0; }
+p.small {
+    font-size: 11px;
+    line-height: 1.5em;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: disc outside none;
+}
+ul li { margin-bottom: 3px; }
+ul.no-bullet {
+    list-style-type: none;
+    margin-bottom: 36px;
+}
+ul.no-bullet strong {
+    display: block;
+    margin-bottom: 12px;
+}
+ul.inine-list { list-style-type: none; }
+ul.inline-list li { display: inline-block; }
 
+/* Custom Type Styles */
+.txt-note {
+    color: #A0A0A0;
+    font-size: 13px;
+    line-height: 18px;
+    padding-right: 70px;
+    margin-top: 0px;
+}
+.txt-info {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+.txt-right { text-align: right; }
+.txt-center { text-align: center; }
 
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+/* Custom Links */
+.btn-link {
+    color: #888;
+    font-family: 'Sanchez', serif;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    position: relative;
+}
+.btn-link .icon-link {
+    color: #5eb087;
+    position: relative;
+    margin: 0 6px;
+}
+/* .btn-nav { padding: 30px 0; } */
+
+.center-link {
+    -webkit-font-smoothing: none;
+    font-size: 26px;
+    position: relative;
+    top: 6px;
 }
 
-code {
-    padding: 1px 5px;
-}
+.left-link { left: -30px; }
+.left-link:hover .icon-link { left: -3px; }
 
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
-}
+.right-link { right: -30px; }
+.right-link:hover .icon-link { right: -3px; }
