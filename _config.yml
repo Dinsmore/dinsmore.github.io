@@ -7,7 +7,7 @@
 
 # Site settings
 title: David Dinsmore Designer/Developer
-email: yo@email.com
+email: dinsmore.david@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   David Dinsmore is a digital designer and front-end developer who believes web applications should be as fast as they are beautiful.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -15,6 +15,8 @@ url: "http://ddinsmore.com" # the base hostname & protocol for your site
 github_username:  dinsmore
 include: ["_pages"]
 permalink: /:title/
+sass:
+  style: compressed
 
 
 # Build settings
