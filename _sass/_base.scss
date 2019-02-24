@@ -1,159 +1,69 @@
-
-
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+html {
+  overflow: hidden;
+  height: 100%;
+  font-size: 10px;
+  box-sizing: border-box;
 }
+*, *:before, *:after { box-sizing: inherit; }
 
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background-color: $background-color;
-    border-top: 4px solid #3E4149;
-    color: $text-color;
-    font-weight: $base-font-weight;
-    font-style: normal;
-    font-size: $base-font-size;
-    font-family: $base-font-family;
-    line-height: $base-line-height;
-    cursor: default;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-body.home {
-    background-color: #3E4149;
-    border: none;
+  height: 100%;
+  overflow: scroll;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0;
+  padding: $page-border-width;
+  -webkit-overflow-scrolling: touch;
+  cursor: default;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 
 
-/* Misc */
-/* Clearfix */
-.cf:before,
-.cf:after {
-    display: table;
-    content: " ";
+// Page Border
+.page-border:before, .page-border:after,
+.page-border__inner:before, .page-border__inner:after {
+  content: "";
+  background: $white;
+  position: fixed;
+  display: block;
+  z-index: 1;
 }
-.cf:after { clear: both; }
-img, object { max-width: 100%; }
-.hidden { display: none; }
-/*.desktop { display: inline-block; }*/
-.mobile { display: none !important; }
-.print-only { display: none !important; }
+// Page Border Bock
+.page-border {
+  &:before {
+    height: $page-border-width;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  // .page-border__inner:before element
+  &__inner:before {
+    height: $page-border-width;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
-/* Links */
-a { color: #5eb087; text-decoration: none; }
-a:hover { cursor: pointer; text-decoration: underline; }
-header a:hover, .pager a:hover { text-decoration: none; }
-
-/* Typography */
-h1, h1 span, h2, h3, h4, h5, h6 {
-    font-feature-settings: "kern";
-    -webkit-font-feature-settings: "kern";
-    -moz-font-feature-settings: "kern";
-    -moz-font-feature-settings: "kern=1";
-    font-weight: normal;
+  &:after {
+    width: $page-border-width;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  // .page-border__inner:after element
+  &__inner:after {
+    width: $page-border-width;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+// END .page-border block
 }
-
-h3 {
-    font-size: 28px;
-    font-family: 'Sanchez', serif;
-    margin: 0 0 24px 0;
-    line-height: 1;
-}
-h4 {
-    font-weight: 700;
-    margin: 10px 0 0 0;
-    font-size: 17px;
-    line-height: 1;
-}
-
-/* Work Titles */
-h5 {
-    color: #FFF;
-    font-family: 'Sanchez', serif;
-    font-size: 20px;
-    margin: 30px 0 2px;
-    line-height: 1;
-}
-h6 {
-    color: #5eb087;
-    font-size: 12px;
-    font-style: italic;
-    line-height: 1.3em;
-    margin: 0 0 12px 0;
-}
-h6 span {
-    display: block;
-    color: #888;
-}
-p { margin: 0 0 24px 0; }
-p.small {
-    font-size: 11px;
-    line-height: 1.5em;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: disc outside none;
-}
-ul li { margin-bottom: 3px; }
-ul.no-bullet {
-    list-style-type: none;
-    margin-bottom: 36px;
-}
-ul.no-bullet strong {
-    display: block;
-    margin-bottom: 12px;
-}
-ul.inine-list { list-style-type: none; }
-ul.inline-list li { display: inline-block; }
-
-/* Custom Type Styles */
-.txt-note {
-    color: #A0A0A0;
-    font-size: 13px;
-    line-height: 18px;
-    padding-right: 70px;
-    margin-top: 0px;
-}
-.txt-info {
-    font-size: 13px;
-    margin-bottom: 12px;
-}
-.txt-right { text-align: right; }
-.txt-center { text-align: center; }
-
-/* Custom Links */
-.btn-link {
-    color: #888;
-    font-family: 'Sanchez', serif;
-    font-size: 18px;
-    line-height: 1;
-    text-decoration: none;
-    position: relative;
-}
-.btn-link .icon-link {
-    color: #5eb087;
-    position: relative;
-    margin: 0 6px;
-}
-/* .btn-nav { padding: 30px 0; } */
-
-.center-link {
-    -webkit-font-smoothing: none;
-    font-size: 26px;
-    position: relative;
-    top: 6px;
-}
-
-.left-link { left: -30px; }
-.left-link:hover .icon-link { left: -3px; }
-
-.right-link { right: -30px; }
-.right-link:hover .icon-link { right: -3px; }

@@ -2,8 +2,12 @@
 <html lang="en">
 {% include head.html %}
 <body>
-{% include header.html %}
-{{ content }}
-{% include footer.html %}
+  <div class="page-border">
+    <div class="page-border__inner">
+      <!-- {% include header.html %} -->
+      {{ content }}
+      <!-- {% include footer.html %} -->
+    </div>
+  </div>
 </body>
 </html>

@@ -4,22 +4,27 @@
 @charset "utf-8";
 
 // Variables
-$base-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$base-font-size:   15px;
+$base-font-family: 'Inconsolata', monospace;
+$base-font-size:   1.7rem;
 $base-font-weight: 400;
-$base-line-height: 1.6;
+$base-line-height: 1.55;
 
-$text-color:       #343434;
-$background-color: #F8F8F8;
+$secondary-font-family: 'Barlow Condensed', sans-serif;
+
+$white:            #FFFFFF;
+$black:            #000000;
+$text-color:       #3F4042;
+$background-color: #e5e9f1;
 $brand-color:      #5EB087;
+
+$page-border-width: 3rem;
 
 // Import Partials
 @import
         "normalize",
         "base",
+        "typography",
         "forms",
         "layout",
-        "responsive",
-        "print",
-        "third-party"
+        "print"
 ;

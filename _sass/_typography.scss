@@ -1,0 +1,16 @@
+// Typography
+
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 10rem 0 0 0;
+    font-weight: 300;
+    letter-spacing: 1.5rem;
+}
+
+p { margin: 0; }
+p + p {
+    text-indent: 1.5rem;
+}
