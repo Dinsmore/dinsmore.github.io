@@ -10,8 +10,10 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
 
-    <link rel="shortcut icon" href="/img/i-favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/img/i-favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,600|Inconsolata">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
