@@ -13,6 +13,7 @@
         /* Designed and built by David Dinsmore */
 
 
+
         /* Huge Thanks */
 
          - Paul Irish - Box Sizing FTW
@@ -21,6 +22,10 @@
 
         - Harry Roberts - Simplified Page Borders
            [https://csswizardry.com/2010/12/simplified-page-borders-in-pure-css/]
+
+
+        - Edenspiekermann - a11y-toggle
+           [http://edenspiekermann.github.io/a11y-toggle/]
 
 
         - Luigi De Rosa @luruke - Barba.js
