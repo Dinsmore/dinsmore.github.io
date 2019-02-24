@@ -1,16 +1,57 @@
 // Typography
 
+// Patterns
+.pattern {
+  position: relative;
+
+  // Wave
+  &--wave:before {
+    content: "\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030";
+    color: green;
+    font-size: 2rem;
+    letter-spacing: 0;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    line-height: .5;
+    overflow: hidden;
+    height: 20px;
+  }
+}
+
+h1, h2 { font-family: $secondary-font-family; }
 h1 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 5rem;
-    line-height: 1;
-    text-transform: uppercase;
-    margin: 10rem 0 0 0;
-    font-weight: 300;
-    letter-spacing: 1.5rem;
+  font-size: 5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 10rem 0 0 0;
+  font-weight: 300;
+  letter-spacing: 1.5rem;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 p { margin: 0; }
 p + p {
-    text-indent: 1.5rem;
+  text-indent: 1.5rem;
+}
+
+strong, b {
+  font-weight: 700;
+}
+small {
+  font-size: 1.3rem;
+}
+
+a { color: inherit; }
+
+
+
+// TODO: Rename this - utility class???;
+section p {
+  max-width: 65rem;
 }
