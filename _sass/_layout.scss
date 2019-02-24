@@ -11,3 +11,110 @@
     margin-left: .25rem;
   }
 }
+
+
+.header {
+  position: fixed;
+  left: $page-border-width;
+  right: $page-border-width;
+  bottom: .5rem;
+  z-index: $z-3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name, strong {
+    font-family: $secondary-font-family;
+    font-weight: 600;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: $base-font-family;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: initial;
+  }
+
+  strong {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+  }
+
+// END .header block
+}
+
+
+
+.menu {
+  position: fixed;
+  bottom: $menu-position;
+  left: $menu-position;
+  font-family: $base-font-family;
+  font-size: 2.2rem;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  z-index: 4;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &[aria-expanded="true"] {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+  }
+  /* Change Icons */
+  &[aria-expanded="false"] .close { display: none; }
+  &[aria-expanded="true"] .open { display: none; }
+
+  // END .menu block
+}
+
+
+.overlay {
+  background: black;
+  color: white;
+  position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 5rem 1rem 5rem 11rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+
+  opacity: 0.9;
+  transform: translate(0%, 0%);
+  /* animate */
+  transition: opacity 0.3s ease-in-out, transform 0s ease-in-out;
+
+
+  // Overlay Hidden = true
+  &[aria-hidden='true'] {
+    opacity: 0;
+    transform: translate(0%, 100%);
+  }
+
+  // End .overlay block
+}

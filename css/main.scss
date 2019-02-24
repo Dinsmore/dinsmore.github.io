@@ -18,7 +18,9 @@ $background-color: #e5e9f1;
 $brand-color:      #5EB087;
 
 $page-border-width: 3rem;
+$menu-position: ($page-border-width + 1rem);
 
+$z-3: 3;
 $z-4: 4;
 
 // Import Partials

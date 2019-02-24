@@ -4,10 +4,35 @@
 <body>
   <div class="page-border">
     <div class="page-border__inner">
+
+      <header class="header">
+        <span class="header__name">David Dinsmore</span>
+        <span class="header__title">Designer<strong>+</strong>UI Developer</span>
+      </header>
+
+      <button type="button" class="menu" data-a11y-toggle="target">
+        <span class="open" aria-label="Click to open overlay menu">&#9776;</span>
+        <span class="close" aria-label="Click to close overlay menu">&#10539;</span>
+      </button>
+      <div class="overlay" id="target" aria-hidden="true" tabindex="1">
+        <section class="section--centered">
+          <p class="u-pb-lv-5"><a href="#">Resume</a><a href="#" class="u-ml-lv-5">Contact</a></p>
+          <p>Hello! I'm <span class="u-sr-only">David Dinsmore,</span> a UI Designer and Front-End Developer from <strike aria-hidden="true">Cincinnati, Ohio</strike> Los Angeles, California.</p>
+          <p>With over a decade of experience on the front-end, I have helped teams design and build everything from static marketing sites to chat apps to full-stack web applications.</p>
+          <p>Along the way I have worked with some incredible clients on some amazing projects like <a href="/work/wild-flavors/">WILD Flavors</a>, <a href="/work/simple-truth/">Simple Truth</a>, <a href="/work/private-selection/">Private Selection</a>, and <a href="/work/setco/">Setco</a>.</p>
+          <p>In my spare time I run a March Madness <a href="/work/full-court-challenge/">bracket</a>, help small businesses with websites <a href="/work/time-savers/">big</a> and <a href="https://jacobmasonry.com/" target="_blank">small</a>, as well as build full-stack <a href="https://jmcapp.herokuapp.com/" target="_blank">web apps</a> using Ruby on Rails. Besides client work I love to <a href="https://codepen.io/collection/XoYZJq/">build shots</a> I find interesting on Dribbble and <a href="https://codepen.io/collection/nxqzPP/">learn new things</a> <span class="nowrap">using <a href="https://codepen.io/dinsmore">Codepen</a></span>.</p>
+          <p>When I am not online, you can find me on the golf course or hanging out with my wife, walking our <span title="yes he does have a little black suit">pug pug.</span></p>
+        </section>
+      </div>
+
       <!-- {% include header.html %} -->
       {{ content }}
       <!-- {% include footer.html %} -->
+
     </div>
   </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/a11y-toggle@2.1.0/a11y-toggle.min.js"></script>
 </body>
 </html>
