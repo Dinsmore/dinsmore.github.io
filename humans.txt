@@ -10,27 +10,25 @@
 
 
 
-        /* Designed And Built By David Dinsmore */
-
+        /* Designed and built by David Dinsmore */
 
 
         /* Huge Thanks */
 
-         - The personal page by Weightshift (Naz Hamid & Scott Robbin) for the initial inspiration for this site.
-           [https://github.com/weightshift/The-Personal-Page]
+         - Paul Irish - Box Sizing FTW
+           [https://www.paulirish.com/2012/box-sizing-border-box-ftw/]
 
 
-        - Supersized! plugin by Sam Dunn of One Mighty Roar.
-          [http://buildinternet.com/project/supersized/]
+        - Harry Roberts - Simplified Page Borders
+           [https://csswizardry.com/2010/12/simplified-page-borders-in-pure-css/]
 
 
-        - TwentyTwenty plugin by Zurb.
-          [http://zurb.com/playground/twentytwenty]
-
+        - Luigi De Rosa @luruke - Barba.js
+           [http://barbajs.org/]           
 
 
 
         /* Site */
 
-           Custom Jekyll site hosted on GitHub Pages
-           Software: Mac OS X, Sublime Text 3, Photoshop CC, Google Chrome, and Google Fonts.
+           Jekyll site hosted on GitHub Pages
+           Software: Mac OS X, Sublime Text 3, Photoshop CC, and Google Fonts.
