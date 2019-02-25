@@ -23,6 +23,8 @@ $menu-position: ($page-border-width + 1rem);
 $z-3: 3;
 $z-4: 4;
 
+$break-medium: 768px;
+
 // Import Partials
 @import
         "normalize",

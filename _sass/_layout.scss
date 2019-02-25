@@ -96,7 +96,7 @@
   position: fixed;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  padding: 5rem 1rem 5rem 11rem;
+  padding: 5rem 2rem 5rem 11rem;
   top: 0;
   right: 0;
   left: 0;
@@ -113,6 +113,13 @@
   &[aria-hidden='true'] {
     opacity: 0;
     transform: translate(0%, 100%);
+  }
+
+  @media (min-width: $break-medium) {
+    padding-left: 22rem;
+    section {
+      max-width: 51rem;
+    }
   }
 
   // End .overlay block
