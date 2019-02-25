@@ -18,8 +18,17 @@
     line-height: .5;
     overflow: hidden;
     height: 20px;
+
+    // @2x
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      font-size: 2rem;
+      letter-spacing: -0.1rem;
+    }
+
   }
 }
+
+
 
 h1, h2 { font-family: $secondary-font-family; }
 h1 {
@@ -49,7 +58,10 @@ small {
 
 a { color: inherit; }
 
-
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 
 // TODO: Rename this - utility class???;
 section p {
