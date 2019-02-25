@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author" href="/humans.txt" />
 
-    <title>David Dinsmore &mdash; {% if page.title %}  {{ page.title | escape_once }}{% endif %}</title>
+    <title>{% if page.title %}  {{ page.title | escape_once }}{% endif %}</title>
 
     <meta name="author" content="David Dinsmore">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}">
