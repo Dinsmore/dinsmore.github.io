@@ -85,6 +85,13 @@
   @media (min-width: $break-small) {
     padding-left: 6rem;
   }
+
+  strong {
+    font-family: $secondary-font-family;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
 }
 
 
