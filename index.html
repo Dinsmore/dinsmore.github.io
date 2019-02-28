@@ -6,12 +6,16 @@ keywords: David Dinsmore, portfolio, designer, interactive designer, product des
 permalink: "/"
 
 currentProjectIssue: "01"
-nextProjectLink: "/work/setco/"
-nextProjectIssue: "02"
+
+nextProjectLink: "/work/simple-truth/"
 nextProjectText: "Simple Truth"
+
+prevProjectLink: "/work/setco/"
+prevProjectText: "Setco Spindles"
 
 ---
 
+<!-- TODO: make this an include -->
 <div class="issue">&#8470;<span>{{page.currentProjectIssue}}</span></div>
 
 <div class="container">
@@ -22,12 +26,12 @@ nextProjectText: "Simple Truth"
       <li><strong>Design</strong></li>
       <li>Art & Creative Direction</li>
       <li>Visual Design</li>
-      <li>Banner Ads</li>
+      <li>Banner Ad Design</li>
     </ul>
     <ul class="details__list">
       <li><strong>Development</strong></li>
-      <li>HTML/ LESS</li>
       <li>Mura CMS integration</li>
+      <li>HTML/ LESS</li>
       <li>jQuery</li>
     </ul>
     <ul class="details__list">
@@ -77,8 +81,12 @@ nextProjectText: "Simple Truth"
 
 </figure>
 
+<!-- TODO: make this an include -->
 <footer>
-  <a href="{{page.nextProjectLink}}">Next<span class="arrow">&xrarr;</span>
-    <p class="u-margin-0">&#8470;{{page.nextProjectIssue}} <strong>{{page.nextProjectText}}</strong></p>
+  <a href="{{page.prevProjectLink}}" class="arrow-prev"><span>&xlarr;</span>Prev
+    <p><strong>{{page.prevProjectText}}</strong></p>
+  </a>
+  <a href="{{page.nextProjectLink}}" class="arrow-next">Next<span>&xrarr;</span>
+    <p><strong>{{page.nextProjectText}}</strong></p>
   </a>
 </footer>

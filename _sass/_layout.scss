@@ -117,7 +117,7 @@
 
 .figure-group {
   background-color: $white;
-  padding: 5rem 0;
+  padding: 5rem 0 10rem;
   text-align: center;
   margin: 0;
 }
@@ -145,27 +145,69 @@ figcaption strong {
 
 
 footer {
-  margin: 10rem auto 10rem;
-  padding: 0;
-  text-align: center;
-}
-footer a,
-footer a:hover,
-footer a:focus {
-  display: inline-block;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  p {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .arrow-prev,
+  .arrow-next {
+    display: inline-block;
+    text-decoration: none;
+    width: 50%;
+    padding: 10rem 0;
+    transition: all 0.5s ease;
+  }
+
+  .arrow-prev {
+    background-color: $background-color;
+    text-align: right;
+    padding-right: 3rem;
+
+    span {
+      display: inline-block;
+      transition: all 0.5s ease;
+      transform: translateX(-5px);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+
+      span { transform: translateX(-15px); }
+    }
+  }
+
+  .arrow-next {
+    background-color: $background-color;
+    padding-left: 3rem;
+
+    span {
+      display: inline-block;
+      transition: all 0.5s ease;
+      transform: translateX(5px);
+    }
+
+    &:hover,
+    &:focus {
+            background-color: $white;
+
+      span { transform: translateX(15px); }
+    }
+  }
+
+  // END Footer
 }
 
 
-footer .arrow {
-  display: inline-block;
-  transition: all 0.5s ease;
-  transform: translateX(5px);
-}
-footer a:hover .arrow,
-footer a:focus .arrow {
-  transform: translateX(15px);
-}
+
+
+
 
 
 
