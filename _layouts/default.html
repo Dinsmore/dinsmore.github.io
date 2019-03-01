@@ -8,14 +8,16 @@
       {% include header.html %}
 
       <main>
+
         <div id="barba-wrapper">
           <div class="barba-container">
+            {% include issue.html %}
             {{ content }}
+            {% include footer.html %}
           </div>
         </div>
-      </main>
 
-      <!-- {% include footer.html %} -->
+      </main>
 
     </div>
   </div>

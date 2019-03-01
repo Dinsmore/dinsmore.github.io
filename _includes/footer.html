@@ -1,15 +1,8 @@
-    <footer>
-        <div class="container cf">
-            <div class="column-one-third">
-                <p>&copy; <span class="desktop">{{ site.time | date: "%Y" }}</span> ddinsmore</p>
-            </div>
-            <div class="column-two-thirds txt-right">
-                <ul class="inline-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/work/wild-flavors">Work</a></li>
-                    <li><a href="/resume">Resume</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+<footer>
+  <a href="{{page.prevProjectLink}}" class="arrow-prev"><span>&xlarr;</span>Prev
+    <p><strong>{{page.prevProjectText}}</strong></p>
+  </a>
+  <a href="{{page.nextProjectLink}}" class="arrow-next">Next<span>&xrarr;</span>
+    <p><strong>{{page.nextProjectText}}</strong></p>
+  </a>
+</footer>
