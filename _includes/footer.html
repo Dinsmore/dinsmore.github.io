@@ -1,10 +1,18 @@
-{% unless page.hideFooterNav %}
+{% if page.showSimpleFooter %}
+<div class="container">
+  <ul class="list-inline">
+    <li><a href="/">Home</a></li>
+    <li><a href="/resume/">Resume</a></li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul>
+</div>
+{% else %}
 <footer>
-  <a href="{{page.prevProjectLink}}" class="arrow-prev"><span>&xlarr;</span>Prev
+  <a href="{{page.prevProjectLink}}" class="arrow-prev"><span class="arrow-prev__arrow">&xlarr;</span>&#8470;<span class="u-ml-lv-1">{{page.prevProjectIssue}}</span>
     <p><strong>{{page.prevProjectText}}</strong></p>
   </a>
-  <a href="{{page.nextProjectLink}}" class="arrow-next">Next<span>&xrarr;</span>
+  <a href="{{page.nextProjectLink}}" class="arrow-next">&#8470;<span class="u-ml-lv-1">{{page.nextProjectIssue}}</span><span class="arrow-next__arrow">&xrarr;</span>
     <p><strong>{{page.nextProjectText}}</strong></p>
   </a>
 </footer>
-{% endunless %}
+{% endif %}
