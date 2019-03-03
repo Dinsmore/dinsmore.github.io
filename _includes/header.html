@@ -10,14 +10,29 @@
 <div class="overlay" id="target" aria-hidden="true" tabindex="1">
   <section class="container">
     <p class="u-pb-lv-5">
-      <a href="/" data-a11y-toggle="target">Home</a>
-      <a href="/resume" data-a11y-toggle="target" class="u-ml-lv-5">Resume</a>
-      <a href="/contact" data-a11y-toggle="target" class="u-ml-lv-5">Contact</a>
+      {% if page.active == "home" %}
+        <span data-a11y-toggle="target">Home</a>
+      {% else %}
+        <a href="/" data-a11y-toggle="target">Home</a>
+      {% endif %}
+
+      {% if page.active == "resume" %}
+        <span class="u-ml-lv-5" data-a11y-toggle="target">Resume</a>
+      {% else %}
+        <a href="/resume/" class="u-ml-lv-5" data-a11y-toggle="target">Resume</a>
+      {% endif %}
+
+      {% if page.active == "contact" %}
+        <span class="u-ml-lv-5" data-a11y-toggle="target">Contact</a>
+      {% else %}
+        <a href="/contact/" class="u-ml-lv-5" data-a11y-toggle="target">Contact</a>
+      {% endif %}
     </p>
-    <p>Hey, I'm David a UI Designer and Front-End Developer from <strike aria-hidden="true">Cincinnati, Ohio</strike> Los Angeles, California.</p>
+    <p>Hey, I'm David a UI Designer and Front-End Developer from sunny <strike aria-hidden="true">Cincinnati, Ohio</strike> Los Angeles, California.</p>
     <p>With over a decade of experience on the front-end, I have helped teams design and build everything from static marketing sites to chat apps to full-stack web applications.</p>
     <p>Along the way I have worked with some incredible clients on some amazing projects like <a href="/work/wild-flavors/">WILD Flavors</a>, <a href="/work/simple-truth/">Simple Truth</a>, <a href="/work/private-selection/">Private Selection</a>, and <a href="/work/setco/">Setco</a>.</p>
-    <p>In my spare time I run a March Madness <a href="/work/full-court-challenge/">bracket</a>, help small businesses with websites <a href="/work/time-savers/">big</a> and <a href="https://jacobmasonry.com/" target="_blank">small</a>, as well as build full-stack <a href="https://jmcapp.herokuapp.com/" target="_blank">web apps</a> using Ruby on Rails. Besides client work I love to <a href="https://codepen.io/collection/XoYZJq/">build shots</a> I find interesting on Dribbble and <a href="https://codepen.io/collection/nxqzPP/">learn new things</a> <span class="nowrap">using <a href="https://codepen.io/dinsmore">Codepen</a></span>.</p>
+    <p>In my spare time I run a March Madness <a href="/work/full-court-challenge/">bracket</a>, help small businesses with websites <a href="/work/time-savers/">big</a> and <a href="https://jacobmasonry.com/" target="_blank">small</a>, as well as build full-stack <a href="https://jmcapp.herokuapp.com/" target="_blank">web apps</a> using Ruby on Rails.</p>
+    <p>Besides client work I love to <a href="https://codepen.io/collection/XoYZJq/">build shots</a> I find interesting on Dribbble and <a href="https://codepen.io/collection/nxqzPP/">learn new things</a> <span class="nowrap">using <a href="https://codepen.io/dinsmore">Codepen</a></span>.</p>
     <p>When I am not online, you can find me on the golf course or hanging out with my wife, walking our <span title="yes he does have a little black suit">pug pug.</span></p>
   </section>
 </div>
