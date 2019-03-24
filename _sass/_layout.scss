@@ -192,7 +192,7 @@ footer {
 
     &:hover,
     &:focus {
-      background-color: $white;
+      background-color: darken($background-color, 3%);
 
       span { transform: translateX(-15px); }
     }
@@ -210,7 +210,7 @@ footer {
 
     &:hover,
     &:focus {
-            background-color: $white;
+            background-color: darken($background-color, 3%);
 
       span { transform: translateX(15px); }
     }
