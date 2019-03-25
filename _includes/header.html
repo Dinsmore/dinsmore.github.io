@@ -1,20 +1,20 @@
-<header class="header">
+<header class="header" role="Banner">
   <span class="header__name">David Dinsmore</span>
   <span class="header__title">Designer<strong>+</strong>UI Developer</span>
 </header>
 
 <button type="button" class="menu" data-a11y-toggle="target">
-  <span class="open" aria-label="Click to open overlay menu">&#9776;</span>
-  <span class="close" aria-label="Click to close overlay menu">&#10539;</span>
+  <span class="open" aria-label="Click to open modal for site navigation">&#9776;</span>
+  <span class="close" aria-label="Click to close modal">&#10539;</span>
 </button>
 
 <div class="overlay" id="target" aria-hidden="true" tabindex="1">
   <section class="container">
-    <p class="overylay__nav">
+    <nav class="main-nav" role="Navigation">
       <a href="/" data-a11y-toggle="target">Home</a>
-      <a href="/resume/" class="u-ml-lv-5" data-a11y-toggle="target">Resume</a>
-      <a href="/contact/" class="u-ml-lv-5" data-a11y-toggle="target">Contact</a>
-    </p>
+      <a href="/resume/" data-a11y-toggle="target">Resume</a>
+      <a href="/contact/" data-a11y-toggle="target">Contact</a>
+    </nav>
     <p>Hey, I'm David a UI Designer and Front-End Developer from sunny <strike aria-hidden="true">Cincinnati, Ohio</strike> Los Angeles, California.</p>
     <p>With over a decade of experience on the front-end, I have helped teams design and build everything from static marketing sites to chat apps to full-stack web applications.</p>
     <p>Along the way I have worked with some incredible clients on some amazing projects like <a href="/work/wild-flavors/">WILD Flavors</a>, <a href="/work/simple-truth/">Simple Truth</a>, <a href="/work/private-selection/">Private Selection</a>, and <a href="/work/setco/">Setco</a>.</p>
