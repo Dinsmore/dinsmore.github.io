@@ -267,6 +267,7 @@ footer {
 }
 
 
+
 .overlay {
   background: $black;
   color: $white;
@@ -285,7 +286,6 @@ footer {
   /* animate */
   transition: opacity 0.3s ease-in-out, transform 0s ease-in-out;
 
-
   // Overlay Hidden = true
   &[aria-hidden='true'] {
     opacity: 0;
@@ -300,4 +300,12 @@ footer {
   }
 
   // End .overlay block
+}
+
+
+.main-nav {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
 }
