@@ -1,12 +1,4 @@
-{% if page.showSimpleFooter %}
-<div class="container">
-  <ul class="list-inline">
-    <li><a href="/">Home</a></li>
-    <li><a href="/resume/">Resume</a></li>
-    <li><a href="/contact/">Contact</a></li>
-  </ul>
-</div>
-{% else %}
+{% unless page.hideFooter %}
 <footer>
   <a href="{{page.prevProjectLink}}" class="arrow-prev" aria-label="Previous Project - {{page.prevProjectText}}"><span class="arrow-prev__arrow">&xlarr;</span>&#8470;<span class="u-ml-lv-1">{{page.prevProjectIssue}}</span>
     <p><strong>{{page.prevProjectText}}</strong></p>
@@ -15,4 +7,4 @@
     <p><strong>{{page.nextProjectText}}</strong></p>
   </a>
 </footer>
-{% endif %}
+{% endunless %}
