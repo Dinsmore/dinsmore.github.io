@@ -1,0 +1,58 @@
+label {
+  display: block;
+  font-family: $secondary-font-family;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+
+  sup {
+    color: red;
+  }
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+
+  padding: 1rem;
+  background-color: $white;
+  border: 1px solid $border-color;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+.button--primary {
+    @media (min-width: $break-medium) {
+      padding: 1.5rem 2rem;
+      font-size: 1.7rem;
+      display: inline-block;
+      width: auto;
+    }
+
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 2rem 3rem;
+    margin: 0;
+    text-decoration: none;
+    background: $black;
+    color: $white;
+    font-family: $secondary-font-family;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+}
+
+

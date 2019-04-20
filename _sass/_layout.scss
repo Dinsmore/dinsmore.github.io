@@ -63,6 +63,8 @@
 }
 
 
+
+
 .row {
   display: flex;
   flex-direction: column;
@@ -73,6 +75,19 @@
 }
 .column-1 { flex: 1; }
 .column-2 { flex: 2; }
+
+.row--form {
+  justify-content: space-between;
+
+  .col {
+    @media (min-width: $break-medium) {
+      width: 48%;
+      margin-top: 0;
+    }
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
 
 
 // .resume.container {

@@ -4,52 +4,54 @@ title: Contact
 excerpt: Contact David Dinsmore
 keywords: Contact, David Dinsmore, Résumé, Resumé, Resume, designer, interactive designer, product designer, UI developer, front-end developer, HTML, CSS
 permalink: "/contact/"
-active: contact
+
+hideFooter: true
+hideIssue: true
 ---
 
-    <div class="container">
-        <section class="cf">
-            <div class="column-one-third">
-                <h3>Contact</h3>
-                <div class="vcard">
-                    David Dinsmore
-                    <div class="adr">
-                        <div class="street-address">PO Box 1768</div>
-                        <span class="locality">Venice</span>,
-                        <span class="region">CA</span>
-                        <span class="postal-code">90294</span>
-                    </div>
-                </div>
-            </div>
-            <div class="column-two-thirds">
-                <p>I am <em>currently available</em> for projects large or small, if you think I would be a good fit for your team, please get in touch.</p>
-                <form action="https://formspree.io/dinsmore.david@gmail.com" method="POST">
-                    <div class="column-one-half">
-                        <label>Name <sup><small>*</small></sup></label>
-                        <input type="text" name="name" placeholder="Your name" autofocus required>
-                    </div>
-                    <div class="column-one-half">
-                        <label>Email <sup><small>*</small></sup></label>
-                        <input type="email" name="_replyto" placeholder="email@email.com" required>
-                    </div>
-                    <label>Message <sup><small>*</small></sup></label>
-                    <textarea name="message"placeholder="Hello..." required></textarea>
+<div class="container u-pb-lv-12">
 
-                    <input type="hidden" name="_next" value="//ddinsmore.com/thanks/" />
-                    <input type="hidden" name="_subject" value="Contact submission from ddinsmore.com" />
-                    <input type="text" name="_gotcha" style="display:none" />
+  <h1 aria-label="WILD Flavors"><span class="pattern pattern--wave">Contact</span></h1>
 
-                    <input type="submit" class="button-primary" value="Submit">
-                </form>
-                <br><br>
-            </div>
-        </section>
-    </div>
-
-    <div class="pager">
-        <div class="container cf">
-            <div class="column-one-half">
-                <a href="/" class="btn-link left-link"><span class="icon-link">&#8672;</span>Return</a>
-            </div>
+  <div class="row u-mt-lv-6">
+    <div class="column-1">
+      <div class="vcard">
+        David Dinsmore
+        <div class="u-mt-lv-1">
+          <div>PO Box 1768</div>
+          <span>Venice</span>, <span>CA</span> <span>90294</span>
         </div>
+      </div>
     </div>
+    <div class="column-2">
+
+      <p>I am <em>currently available</em> for projects large or small, if you think I would be a good fit for your team, please get in touch.</p>
+
+      <form action="https://formspree.io/dinsmore.david@gmail.com" method="POST">
+
+        <div class="row row--form u-mb-lv-3">
+          <div class="col">
+            <label>Name <sup><small>*</small></sup></label>
+            <input type="text" name="name" autofocus required>
+          </div>
+          <div class="col">
+            <label>Email <sup><small>*</small></sup></label>
+            <input type="email" name="_replyto" required>
+          </div>
+        </div>
+
+        <label>Message <sup><small>*</small></sup></label>
+        <textarea class="u-mb-lv-3" rows="6" name="message" required></textarea>
+
+        <input type="hidden" name="_next" value="//ddinsmore.com/thanks/" />
+        <input type="hidden" name="_subject" value="Contact submission from ddinsmore.com" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <button type="submit" class="button--primary">Submit</button>
+        <!-- <input type="submit" class="button-primary" value="Submit"> -->
+      </form>
+
+    </div>
+  </div>
+
+</div>
