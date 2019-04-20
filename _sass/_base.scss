@@ -1,14 +1,10 @@
 html {
-  overflow: hidden;
-  height: 100%;
   font-size: 10px;
   box-sizing: border-box;
 }
 *, *:before, *:after { box-sizing: inherit; }
 
 body {
-  height: 100%;
-  overflow: scroll;
   background-color: $background-color;
   color: $text-color;
   font-family: $base-font-family;
@@ -16,9 +12,9 @@ body {
   line-height: $base-line-height;
   margin: 0;
   padding: $page-border-width;
-  -webkit-overflow-scrolling: touch;
   cursor: default;
 
+  -webkit-overflow-scrolling: touch;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
