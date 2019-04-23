@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: $base-htm-font-size;
   box-sizing: border-box;
 }
 *, *:before, *:after { box-sizing: inherit; }
@@ -21,8 +21,6 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
-
-
 // Page Border
 .page-border:before, .page-border:after,
 .page-border__inner:before, .page-border__inner:after {
@@ -32,7 +30,7 @@ body {
   display: block;
   z-index: $z-1;
 }
-// Page Border Bock
+// Page Border Block
 .page-border {
   &:before {
     height: $page-border-width;

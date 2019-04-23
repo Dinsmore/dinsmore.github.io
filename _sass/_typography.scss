@@ -1,74 +1,24 @@
 // Typography
 
-// Patterns
-.pattern {
-  position: relative;
-
-  // Wave
-  &--wave:before {
-    content: "\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030\3030";
-    color: green;
-    font-size: 2rem;
-    letter-spacing: 0;
-    position: absolute;
-    top: -30px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    line-height: .5;
-    overflow: hidden;
-    height: 20px;
-
-    // @2x
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      font-size: 2rem;
-      letter-spacing: -0.1rem;
-    }
-
-  }
-}
-
-hr {
-  border: none;
-  border-bottom: 1px solid #c7c7c7;
-}
-
-.vcard {
-  @media (min-width: $break-medium) {
-    display: block;
-    font-size: 1.3rem;
-    line-height: 1;
-  }
-  display: none;
-}
-
-
-
 h1, h2, h3 { font-family: $secondary-font-family; }
+
 h1 {
   font-size: 5rem;
+  font-weight: $secondary-font-weight;
+  letter-spacing: 0.5rem;
   line-height: 1;
   text-transform: uppercase;
-  padding: 10rem 0 0 0;
+  padding-top: 10rem;
   margin: 0;
-  font-weight: 300;
-  letter-spacing: 1.5rem;
 
   @media (min-width: $break-medium) {
     font-size: 10rem;
+    letter-spacing: 1.5rem;
     padding-top: 20rem;
-
-    span:before {
-      font-size: 2rem;
-    }
   }
 
 }
-
-h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-}
+h2 { font-size: 2.2rem; }
 
 h3 {
   font-size: 3.2rem;
@@ -87,22 +37,20 @@ h4 {
 
 p { margin: 0 0 2rem 0; }
 
-
-strong, b {
-  font-weight: 700;
-}
-small {
-  font-size: 1.3rem;
-}
+small { font-size: 1.3rem; }
 
 a { color: inherit; }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+hr {
+  border: none;
+  border-bottom: 1px solid $border-color;
 }
 
-// TODO: Rename this - utility class???;
-section p {
-  max-width: 65rem;
+.vcard {
+  @media (min-width: $break-medium) {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  display: none;
 }

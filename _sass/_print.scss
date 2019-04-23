@@ -2,7 +2,7 @@
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important;
+        color: $black !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -14,35 +14,51 @@
         max-width: 100% !important;
     }
 
-     // Hidden
-    // footer { display: none; }
-    .print-only { display: block !important; }
+    // Hidden
+    .issue,
+    h1 span:before,
+    .menu,
+    .overlay,
+    .img-feature,
+    footer {
+        display: none;
+    }
 
      // Overrides
-    html { padding-bottom: 0px; }
-    body {
-        font-size: 12px;
-        border: none;
+    html { font-size: 10px;}
+    body { padding: 0; }
+    .page-border:before, .page-border:after, .page-border__inner:before, .page-border__inner:after {
+        display: none;
+    }
+    .header {
+        position: relative;
+        line-height: 2;
+        top: 0;
+        left: 0;
     }
 
      // Typography
-    h1, h2 { margin: 0; line-height: 1; }
-    h1 {
-        font-size: 30px;
-        margin: 0 0 0px 0;
+     h1 { padding: 6rem 0 3rem; }
+     .details {
+        margin: 3rem 0;
+        justify-content: flex-end;
+        flex-direction: row;
+        &__list {
+            font-size: 1.2rem;
+            padding-left: 3rem;
+            strong {
+                font-size: 1.5rem;
+            }
+        }
     }
-    h2 { font-size: 15px; }
-    h3 { font-size: 17px; }
-    h4 { font-size: 14px; margin-top: 4px; }
-    a { border: none;}
-    p, h1, h2, h3, h4 {
-        orphans: 3;
-        widows: 3;
+
+    .figure-group,
+    figure figure:not(:first-child) {
+        padding-top: 1rem;
     }
-    h1, h2, h3, h4 { page-break-after: avoid; }
-    p {
-        font-size: 12px;
-        line-height: 1.5em;
-        margin-bottom: 24px;
+
+    .container p,
+    article p {
+        max-width: 55rem;
     }
 }
