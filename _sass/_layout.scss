@@ -2,9 +2,10 @@
 
 .issue {
   position: fixed;
-  top: .65rem;
+  top: .75rem;
   left: $page-border-width;
   font-family: $base-font-family;
+  font-size: 1.5rem;
   line-height: 1;
   z-index: $z-2;
 }
@@ -33,7 +34,7 @@
 
   &__title {
     font-family: $base-font-family;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: $base-font-weight;
     text-transform: initial;
   }
@@ -353,8 +354,16 @@ footer {
 
 
 .main-nav {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
+  // flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 250px;
+  // max-width: 135px;
+  max-width: 350px;
+
+  // a { margin-bottom: 1rem; }
+
+  // @media (min-width: $break-small) {
+  //   max-width: 350px;
+  // }
 }
