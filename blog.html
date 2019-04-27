@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+keywords: David Dinsmore, Resume, designer, interactive designer, product designer, UI developer, front-end developer, HTML, CSS
+permalink: "/blog/"
+
+
+hideFooter: true
+hideIssue: true
+---
+
+<div class="container u-pb-lv-12">
+  <h1 aria-label="Latest Posts"><span class="pattern pattern--wave">Latest</span> Posts</h1>
+
+  <ul class="unstyled">
+    {% for post in site.posts %}
+      <li>
+        <h2 class="u-mt-lv-6"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p><em>{{ post.date | date: '%B %d, %Y' }}</em></p>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
